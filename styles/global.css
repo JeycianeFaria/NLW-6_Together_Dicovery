@@ -18,7 +18,7 @@ html {
 
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
-    --grey-medium: #D3D9E2;
+    --grey-medium: #EAECF2;
     --grey-light: #E5EAF1;
 
     --hover-blue: #5699FF;
@@ -68,6 +68,22 @@ button > img, .button > img {
     width: 2rem;
 }
 
+button.outlined, .button.outlined {
+    background: var(--white);
+    color: var(--blue);
+    border: 0.2rem solid var(--blue);
+}
+
+button.red, .button.red {
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey, .button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
 .content {
     width: 100%;
     margin: 0 auto;
@@ -83,12 +99,6 @@ button > img, .button > img {
     clip-path: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-}
-
-button.outlined, .button.outlined {
-    background: var(--white);
-    color: var(--blue);
-    border: 0.2rem solid var(--blue);
 }
 
 .content header {
